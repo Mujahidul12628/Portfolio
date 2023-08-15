@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import hero from "../assets/images/hero.png";
 import "./animate.css";
-// import "./neon-animation.css"; // Import the CSS file for the neon animation
 
 const Hero = () => {
   const [animate, setAnimate] = useState(false);
@@ -20,13 +19,13 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center min-h-screen py-10 mx-auto max-w-7xl md:flex-row"
+      className="flex flex-col items-center justify-center py-10 mx-auto max-w-7xl md:flex-row"
     >
-      <div className="flex items-center justify-center flex-1 h-full">
+      <div className="flex flex-1 items-center justify-center mb-8 md:mb-0">
         <img
           src={hero}
           alt=""
-          className={`md:w-11/12  object-cover image-transition ${animate && "animate"
+          className={`md:w-3/6 object-cover image-transition ${animate && "animate"
             }`}
         />
       </div>
@@ -42,7 +41,7 @@ const Hero = () => {
               className={`text-slide-in ${animate ? "typing-animation" : ""}`}
             >
               <span className={`text-loading ${animate ? "animate__animated animate__fadeIn" : ""}`}>
-                Muhammad Mujahid
+                Mujahidul Islam
               </span>
             </span>
           </h1>
@@ -54,7 +53,6 @@ const Hero = () => {
               Download Resume
             </button>
           </a>
-
         </div>
       </div>
     </section>

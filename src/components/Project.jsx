@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/project-1.jpg";
 import project2 from "../assets/images/project-2.jpg";
 import project3 from "../assets/images/project-3.jpg";
+import project4 from "../assets/images/project-6.jpg";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -27,6 +28,12 @@ const Project = () => {
       name: "Toys Galaxy",
       github_link: "https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-client-side-Mujahidul12628",
       live_link: "https://toys-galaxy-9f997.web.app/",
+    },
+    {
+      img: project4,
+      name: "Trek Vibes",
+      github_link: "https://github.com/Mujahidul12628/Travel",
+      live_link: "https://trek-vibes.web.app/",
     }
   ];
   return (
