@@ -19,9 +19,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center py-10 mx-auto max-w-7xl md:flex-row"
+      className="flex flex-col items-center justify-center p-1 py-10 mx-auto max-w-7xl md:flex-row-reverse"
     >
-      <div className="flex flex-1 items-center justify-center mb-8 md:mb-0">
+      <div className="flex items-center justify-center flex-1 mb-8 md:mb-0">
         <img
           src={hero}
           alt=""
