@@ -8,26 +8,26 @@ const About = () => {
   ];
   return (
     <section id="about" className="py-10 text-white">
-      <div className="text-center mt-8">
+      <div className="mt-8 text-center">
         <h3 className="text-4xl font-semibold">
           About <span className="text-purple-600">Me</span>
         </h3>
-        <p className="text-gray-400 my-3 text-lg">My introduction</p>
-        <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
+        <p className="my-3 text-lg text-gray-400">My introduction</p>
+        <div className="flex flex-col-reverse items-center max-w-6xl gap-12 px-10 mx-auto md:flex-row md:gap-6">
           <div className="p-2">
-            <div className="text-gray-300 my-3">
-              <p className="text-justify leading-7 w-11/12 mx-auto">
+            <div className="my-3 text-gray-300">
+              <p className="mx-auto leading-7 text-justify">
                 "Hi, I'm Mohammad Mujahid, a MERN stack developer with 1 years of experience in building web applications. I specialize in creating robust and scalable applications using
                 the MERN stack, which stands for MongoDB, Express.js, React.js, and Node.js.
               </p>
-              <div className="flex mt-10 items-center gap-7">
+              <div className="flex items-center mt-10 gap-7">
                 {info.map((content) => (
                   <div className="mx-auto" key={content.text}>
-                    <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                    <h3 className="text-2xl font-semibold text-white md:text-4xl">
                       {content.count}
                       <span className="text-purple-600">+</span>{" "}
                     </h3>
-                    <span className="md:text-base text-xs">{content.text}</span>
+                    <span className="text-xs md:text-base">{content.text}</span>
                   </div>
                 ))}
               </div>
@@ -38,12 +38,12 @@ const About = () => {
               </a> */}
             </div>
           </div>
-          <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
-            {/* <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
+          <div className="flex items-center justify-center flex-1 mt-6 md:mt-0">
+            {/* <div className="relative w-11/12 h-full max-w-sm lg:w-96 sm:w-10/12 aboutImg ">
               <img
                 src={aboutImg}
                 alt=""
-                className="w-full object-cover bg-cyan-600 rounded-xl"
+                className="object-cover w-full bg-cyan-600 rounded-xl"
               />
             </div> */}
           </div>
