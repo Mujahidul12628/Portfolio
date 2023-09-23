@@ -43,15 +43,15 @@ const Hero = () => {
           <p className="mx-auto leading-6 text-justify text-slate-300">
             Diligent and detail-oriented Computer Science and Engineering graduate with a strong commitment for development and learning. Seeking a challenging position as a Web Developer at any reputable company to contribute to the growth of the organization as well as to expand my expertise.
           </p>
-          <div className="my-2 flex justify-center sm:justify-start">
+          <div className="flex justify-center my-2 sm:justify-start">
             <TiSocialFacebookCircular className='mr-1 rounded-full text-cyan-500' size={50} />
             <TiSocialLinkedinCircular className='mr-1 rounded-full text-cyan-500' size={50} />
             <TiSocialGooglePlusCircular className='mr-1 rounded-full text-cyan-500' size={50} />
             <TiSocialTwitterCircular className='mr-1 rounded-full text-cyan-500' size={50} />
             {/* <VscGithub className='mr-1 rounded-full text-cyan-500' size={40} /> */}
 
-            <div className="mx-1 flex justify-center items-center">
-              <FiGithub className='p-1 border-4 border-cyan-500 rounded-full text-cyan-500' size={40} />
+            <div className="flex items-center justify-center mx-1">
+              <FiGithub className='p-1 border-4 rounded-full border-cyan-500 text-cyan-500' size={40} />
             </div>
           </div>
 
@@ -62,7 +62,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="flex items-center p-5 border-8 border-opacity-10 rounded-full border-blue-500 justify-center flex-1 order-1 w-8/12 grid-cols-1 mx-auto mb-8 sm:w-6/12 md:w-11/12 lg:w-10/12 xl:w-9/12 md:order-2 md:col-span-2 lg:col-span-1 md:mb-0 md:mr-10">
+      <div className="flex items-center justify-center flex-1 order-1 w-8/12 grid-cols-1 p-5 mx-auto mb-8 border-8 border-blue-500 rounded-full border-opacity-10 sm:w-6/12 md:w-11/12 lg:w-10/12 xl:w-9/12 md:order-2 md:col-span-2 lg:col-span-1 md:mb-0 md:mr-10">
         <img
           src={hero}
           alt=""

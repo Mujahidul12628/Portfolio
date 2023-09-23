@@ -17,8 +17,9 @@ const About = () => {
           <div className="p-2">
             <div className="my-3 text-gray-300">
               <p className="mx-auto leading-7 text-justify">
-                "Hi, I'm Mohammad Mujahid, a MERN stack developer with 1 years of experience in building web applications. I specialize in creating robust and scalable applications using
-                the MERN stack, which stands for MongoDB, Express.js, React.js, and Node.js.
+                <p className="mx-auto leading-6 text-justify text-slate-300">
+                  Diligent and detail-oriented Computer Science and Engineering graduate with a strong commitment for development and learning. Seeking a challenging position as a Web Developer at any reputable company to contribute to the growth of the organization as well as to expand my expertise.
+                </p>
               </p>
               <div className="flex items-center mt-10 gap-7">
                 {info.map((content) => (
@@ -33,19 +34,19 @@ const About = () => {
               </div>
               <br />
               <br />
-              {/* <a href="./src/assets/Code_a_program.pdf" download>
+              <a href="./src/assets/Code_a_program.pdf" download>
                 <button className="btn-primary">Download CV</button>
-              </a> */}
+              </a>
             </div>
           </div>
           <div className="flex items-center justify-center flex-1 mt-6 md:mt-0">
-            {/* <div className="relative w-11/12 h-full max-w-sm lg:w-96 sm:w-10/12 aboutImg ">
+            <div className="relative w-11/12 h-full max-w-sm lg:w-96 sm:w-10/12 aboutImg ">
               <img
                 src={aboutImg}
                 alt=""
                 className="object-cover w-full bg-cyan-600 rounded-xl"
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
