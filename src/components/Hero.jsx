@@ -66,11 +66,18 @@ const Hero = () => {
 
           </div>
 
-          <a href="./src/assets/Code_a_program.pdf" download>
+          {/* <a href="./src/assets/Code_a_program.pdf" download>
             <button className={`btn bg-cyan-500 my-5 p-2 sm:p-3 rounded ${animate ? "neon-animation" : ""}`}>
               Download Resume
             </button>
+          </a> */}
+
+          <a href="https://drive.google.com/file/d/1x2BpXGPDxFKiTNp5tV6Twi2tGrNfPS9h/view?usp=sharing" target="_blank" rel="noopener noreferrer" download="Resume of Mujahidul Islam.pdf">
+            <button className="btn bg-cyan-500 my-5 p-2 sm:p-3 rounded">
+              Download Resume
+            </button>
           </a>
+
         </div>
       </div>
       <div className="flex items-center justify-center flex-1 order-1 w-8/12 grid-cols-1 p-5 mx-auto mb-8 border-8 border-blue-500 rounded-full border-opacity-10 sm:w-6/12 md:w-11/12 lg:w-10/12 xl:w-9/12 md:order-2 md:col-span-2 lg:col-span-1 md:mb-0 md:mr-10">
