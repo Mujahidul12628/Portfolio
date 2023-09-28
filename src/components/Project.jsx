@@ -1,96 +1,170 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from 'react';
+
 import project1 from "../assets/images/project-1.jpg";
 import project2 from "../assets/images/project-2.jpg";
 import project3 from "../assets/images/project-3.jpg";
 import project4 from "../assets/images/project-6.jpg";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper";
+
 
 const Project = () => {
-  const projects = [
-    {
-      img: project1,
-      name: "Savoury Bite",
-      github_link: "https://github.com/Mujahidul12628/savoury-bite",
-      live_link: "https://superlative-kashata-685378.netlify.app/",
-    },
-    {
-      img: project2,
-      name: "Job Portal",
-      github_link: "https://github.com/Mujahidul12628/React-Practice-Folder",
-      live_link: "https://ubiquitous-sunshine-cce35e.netlify.app/",
-    },
-    {
-      img: project3,
-      name: "Toys Galaxy",
-      github_link: "https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-client-side-Mujahidul12628",
-      live_link: "https://toys-galaxy-9f997.web.app/",
-    },
-    {
-      img: project4,
-      name: "Trek Vibes",
-      github_link: "https://github.com/Mujahidul12628/Travel",
-      live_link: "https://trek-vibes.web.app/",
-    }
-  ];
+
   return (
-    <section id="projects" className="py-10 text-white">
-      <div className="text-center">
-        <h3 className="text-4xl font-semibold">
-          My <span className="text-purple-600">Projects</span>
-        </h3>
-        <p className="mt-3 text-lg text-gray-400">My awesome works</p>
+    <section id="projects" className='mx-auto max-w-7xl  sm:px-0'>
+      <div className='flex items-center justify-center mx-auto py-12 text-4xl font-bold text-cyan-500'>
+        Projects
       </div>
-      <br />
-      <div className="relative flex items-center max-w-6xl px-5 mx-auto">
-        <div className="w-full ">
-          <Swiper
-            slidesPerview={1.2}
-            spaceBetween={20}
-            breakpoints={{
-              768: {
-                slidesPerView: 2,
-              },
-            }}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination, Autoplay]}
-          >
-            {projects.map((project_info, i) => (
-              <SwiperSlide key={i}>
-                <div className="w-full p-4 h-fit bg-slate-700 rounded-xl">
-                  <img src={project_info.img} alt="" className="rounded-lg" />
-                  <h3 className="my-4 text-xl">{project_info.name}</h3>
-                  <div className="flex gap-3">
-                    <a
-                      href={project_info.github_link}
-                      target="_blank"
-                      className="inline-block px-2 py-1 text-purple-600 bg-gray-800"
-                    >
-                      Github
+      <div className='flex justify-end item-center'>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mx-2  md:mx-8'>
+          <div className=''>
+            <div className="">
+              <img
+                src={project2}
+                alt=""
+                className={`w-full shadowed `}
+              />
+              <div className='px-2 back-color'>
+                <div className='pt-4 pb-2 text-md md:text-lg text-cyan-500'>
+                  Savoury Bite <span>(Food Website)</span>
+                </div>
+                <div className='text-xs text-justify '>
+                  It's a travel website. Users can choose favored spots, securing discounts via special deals. Express has been implemented for getting the data from the server side.
+                </div>
+                <div className='flex flex-wrap items-center py-2 text-sm'>
+                  <span> Technology:</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>React JS</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Tailwind</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Countup</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Swiper JS</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Node JS</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Express</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Firebase</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Vercel</span>
+                </div>
+                <div className='pt-3 pb-5'>
+                  <div className='flex item-center justify-start'>
+                    <a href="https://trek-vibes.web.app/" target="_blank" class='px-5 py-1 text-sm sm:text-xs md:text-sm lg:text-md mr-3 rounded-sm hover:border-2 hover:border-cyan-500 bg-cyan-600 hover:bg-cyan-800'>
+                      <span>Live</span>
                     </a>
-                    <a
-                      href={project_info.live_link}
-                      target="_blank"
-                      className="inline-block px-2 py-1 text-purple-600 bg-gray-800"
-                    >
-                      Live Demo
+                    <a href="https://github.com/Mujahidul12628/Travel" target="_blank" className='px-3 py-1 text-xs xs:text-sm sm:text-xs md:text-sm lg:text-md  mr-3 border rounded-sm border-cyan-500 hover:bg-cyan-600'>
+                      <span>Github-Client</span>
+                    </a>
+                    <a href="https://github.com/Mujahidul12628/Travel-Server" target="_blank" className='px-3 py-1 text-xs xs:text-sm sm:text-xs md:text-sm lg:text-md border rounded-sm border-cyan-500 hover:bg-cyan-600'>
+                      <span>Github-Server</span>
                     </a>
                   </div>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
 
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+          <div className=''>
+            <div className="">
+              <img
+                src={project1}
+                alt=""
+                className={`w-full shadowed `}
+              />
+              <div className='px-2 back-color'>
+                <div className='pt-4 pb-2 text-md md:text-lg text-cyan-500'>
+                  Savoury Bite <span>(Food Website)</span>
+                </div>
+                <div className='text-xs text-justify '>
+
+                  Firebase authentication has been integrated for login and registration. Implement Protected Routes, Chef recipes section can't be accessed without logging.
+                </div>
+                <div className='flex flex-wrap items-center py-2 text-sm'>
+                  <span> Technology:</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>React JS</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Tailwind</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Daisy UI</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Toastyfy</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Nodemon</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Express</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Firebase</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Vercel</span>
+
+                </div>
+                <div className='pt-3 pb-5'>
+                  <div className='flex item-center justify-start'>
+                    <a href="https://savoury-bite.web.app/" target="_blank" class='px-5 py-1 text-sm sm:text-xs md:text-sm lg:text-md mr-3 rounded-sm hover:border-2 hover:border-cyan-500 bg-cyan-600 hover:bg-cyan-800'>
+                      <span>Live</span>
+                    </a>
+                    <a href="https://github.com/Mujahidul12628/savoury-bite" target="_blank" className='px-3 py-1 text-xs xs:text-sm sm:text-xs md:text-sm lg:text-md  mr-3 border rounded-sm border-cyan-500 hover:bg-cyan-600'>
+                      <span>Github-Client</span>
+                    </a>
+                    <a href="https://github.com/Mujahidul12628/savoury-bite-server" target="_blank" className='px-3 py-1 text-xs xs:text-sm sm:text-xs md:text-sm lg:text-md border rounded-sm border-cyan-500 hover:bg-cyan-600'>
+                      <span>Github-Server</span>
+                    </a>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+          <div className=''>
+            <div className="">
+              <img
+                src={project3}
+                alt=""
+                className={`w-full shadowed `}
+              />
+              <div className='px-2 back-color'>
+                <div className='pt-4 pb-2 text-md md:text-lg text-cyan-500'>
+                  Toys Galaxy <span>(Toys Website)</span>
+                </div>
+                <div className='text-xs text-justify '>
+                  Google & Email/password-based authentication system integrated. React tab implemented for selecting different categories of toys details.
+                </div>
+                <div className='flex flex-wrap items-center py-2 text-sm'>
+                  <span> Technology:</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>React JS</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Tailwind</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>React Spring</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>React Tab</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Nodemon</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Express</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Firebase</span>
+                  <span className='px-2 py-1 mx-2 my-1 text-xs rounded-sm tech-box'>Vercel</span>
+                </div>
+                <div className='pt-3 pb-5'>
+                  <div className='flex item-center justify-start'>
+                    <a href="https://toys-galaxy-9f997.web.app/" target="_blank" class='px-5 py-1 text-sm sm:text-xs md:text-sm lg:text-md mr-3 rounded-sm hover:border-2 hover:border-cyan-500 bg-cyan-600 hover:bg-cyan-800'>
+                      <span>Live</span>
+                    </a>
+                    <a href="https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-client-side-Mujahidul12628" target="_blank" className='px-3 py-1 text-xs xs:text-sm sm:text-xs md:text-sm lg:text-md  mr-3 border rounded-sm border-cyan-500 hover:bg-cyan-600'>
+                      <span>Github-Client</span>
+                    </a>
+                    <a href="https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-server-side-Mujahidul12628" target="_blank" className='px-3 py-1 text-xs xs:text-sm sm:text-xs md:text-sm lg:text-md border rounded-sm border-cyan-500 hover:bg-cyan-600'>
+                      <span>Github-Server</span>
+                    </a>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+        </div>
       </div>
     </section>
   );

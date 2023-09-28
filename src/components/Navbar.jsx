@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
+import logo from "../assets/images/name-logo.png";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
   const menuLinks = [
     { name: "HOME", link: "#home" },
-    { name: "ABOUT", link: "#about" },
+    { name: "ABOUT", link: "#home" },
     { name: "SKILLS", link: "#skills" },
     { name: "PROJECTS", link: "#projects" },
-    // { name: "CONTACT", link: "#contact" },
+
   ];
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -24,7 +25,13 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="mx-7">
           <h4 className="text-4xl font-bold uppercase">
-            <span className="text-cyan-500">Mujahid</span>
+            <span className="text-cyan-600">
+              <img
+                src={logo}
+                alt=""
+                className={`w-1/4  `}
+              />
+            </span>
           </h4>
         </div>
         <div
@@ -33,7 +40,7 @@ const Navbar = () => {
         >
           <ul className="flex items-center gap-1 py-2 text-lg text-white">
             {menuLinks?.map((menu, i) => (
-              <li key={i} className="px-6 hover:text-purple-600">
+              <li key={i} className="px-6 hover:text-cyan-500 hover:border-2 hover:border-cyan-500">
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
             ))}

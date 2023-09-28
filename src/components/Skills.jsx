@@ -16,9 +16,8 @@ const Skills = () => {
         <h3 className="text-4xl font-semibold">
           <span className="text-cyan-500">Skill</span>
         </h3>
-
       </div>
-      <div className='grid justify-between grid-cols-2 gap-1 mx-2 md:gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 item-center md:mx-8' >
+      <div className='grid justify-between grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 item-center md:mx-8' >
 
         <div className='px-8 py-4 mx-auto border-2 rounded-md sm:px-12 sm:py-4 md:px-16 md:py-5 border-cyan-500'>
           <DiReact className='w-24 h-24 mr-1 rounded-full text-cyan-500' />

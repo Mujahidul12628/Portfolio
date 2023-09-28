@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="grid items-center grid-cols-1 py-24 mx-auto md:grid-cols-5 lg:grid-cols-3 justify-evenly max-w-7xl md:flex-row-reverse"
+      className="grid items-center grid-cols-1 mt-5 md:mt-10 py-12 mx-auto md:grid-cols-5 lg:grid-cols-3 justify-evenly max-w-7xl md:flex-row-reverse"
     >
       <div className="order-2 w-5/6 grid-cols-1 mx-auto md:order-1 md:col-span-3 lg:col-span-2 md:ml-10">
         <div className="text-center md:text-left">
@@ -44,15 +44,26 @@ const Hero = () => {
             Diligent and detail-oriented Computer Science and Engineering graduate with a strong commitment for development and learning. Seeking a challenging position as a Web Developer at any reputable company to contribute to the growth of the organization as well as to expand my expertise.
           </p>
           <div className="flex justify-center my-2 sm:justify-start">
-            <TiSocialFacebookCircular className='mr-1 rounded-full text-cyan-500' size={50} />
-            <TiSocialLinkedinCircular className='mr-1 rounded-full text-cyan-500' size={50} />
+
+            <a href="https://www.facebook.com/muzahidulislam.rony" target="_blank"><TiSocialFacebookCircular className='mr-1 rounded-full text-cyan-500' size={50} /></a>
+
+            <a href="https://www.linkedin.com/in/mujahidulislam628/" target="_blank"><TiSocialLinkedinCircular className='mr-1 rounded-full text-cyan-500' size={50} /></a>
+
+            <a href="https://github.com/Mujahidul12628/" target="_blank" className="flex items-center justify-center mx-1">
+
+              <FiGithub className='p-1 border-4 rounded-full border-cyan-500 text-cyan-500' size={40} />
+
+            </a>
+
+
+
+
+
             <TiSocialGooglePlusCircular className='mr-1 rounded-full text-cyan-500' size={50} />
             <TiSocialTwitterCircular className='mr-1 rounded-full text-cyan-500' size={50} />
             {/* <VscGithub className='mr-1 rounded-full text-cyan-500' size={40} /> */}
 
-            <div className="flex items-center justify-center mx-1">
-              <FiGithub className='p-1 border-4 rounded-full border-cyan-500 text-cyan-500' size={40} />
-            </div>
+
           </div>
 
           <a href="./src/assets/Code_a_program.pdf" download>
