@@ -29,11 +29,11 @@ const ResumeCard = ({
   p2,
 }) => {
   return (
-    <div className="flex flex-col w-full h-auto gap-5 my-5 border border-green-500">
+    <div className="flex flex-col w-full h-auto gap-5 my-5 ">
       <div className="flex flex-col justify-center w-full gap-6 p-4 bg-black rounded-lg bg-opacity-20 lgl:px-10 lgl:gap-10">
         <div className="flex flex-col justify-between gap-4 lgl:flex-row lgl:gap-0 lgl:items-center">
           <div className="py-5">
-            <p className="flex items-center justify-start px-2 py-2 text-xl font-medium bg-black bg-opacity-25 rounded-lg text-designColor shadow-shadowOne">
+            <p className="flex items-center justify-start px-2 py-2 text-xl font-medium bg-black bg-opacity-25 rounded-lg text-cyan-500 shadow-shadowOne">
               {h}
             </p>
             <h3 className="text-xl font-semibold text-blue-500 md:text-2xl ">
