@@ -21,7 +21,11 @@ import { FiGithub } from "react-icons/fi";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
+    words: [
+      "Software Engineer",
+      "Full Stack Developer.",
+      "Collaborative Team Player",
+    ],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -58,7 +62,7 @@ const LeftBanner = () => {
         <ul className="flex flex-wrap items-center justify-center gap-2 xs:gap-0 xs:justify-start example-2">
           <li className="icon-content">
             <a
-              href="https://www.spotify.com/"
+              href="https://www.linkedin.com/in/mujahidulislam628/"
               aria-label="Linkedin"
               data-social="linkedin"
               target="_blank"
@@ -71,7 +75,7 @@ const LeftBanner = () => {
           </li>
           <li className="icon-content">
             <a
-              href="https://www.pinterest.com/"
+              href="https://github.com/Mujahidul12628/"
               aria-label="Github"
               data-social="github"
               target="_blank"
@@ -84,7 +88,7 @@ const LeftBanner = () => {
           </li>
           <li className="icon-content">
             <a
-              href="https://www.spotify.com/"
+              href="https://www.facebook.com/mujahidul12628/"
               aria-label="Facebook"
               data-social="facebook"
               target="_blank"
@@ -97,7 +101,7 @@ const LeftBanner = () => {
           </li>
           <li className="icon-content">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/mujahidul_islam_fardin/"
               aria-label="Instagram"
               data-social="instagram"
               target="_blank"
@@ -110,7 +114,7 @@ const LeftBanner = () => {
           </li>
           <li className="icon-content">
             <a
-              href="https://www.discord.com/"
+              href="https://discordapp.com/users/mujahidulislam_62283"
               aria-label="Discord"
               data-social="discord"
               target="_blank"
@@ -174,7 +178,7 @@ const LeftBanner = () => {
       </div> */}
       <div className="flex justify-center md:justify-start">
         <a
-          href="https://drive.google.com/file/d/1x2BpXGPDxFKiTNp5tV6Twi2tGrNfPS9h/view?usp=sharing"
+          href="https://drive.google.com/file/d/1yTYc-fUtuV_PvO-khaH-hDBwRcYRY6ZK/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           download="Resume of Mujahidul Islam.pdf"
