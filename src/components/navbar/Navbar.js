@@ -42,7 +42,7 @@ const Navbar = () => {
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}
-          className="inline-flex items-center justify-center w-10 h-10 text-xl bg-black rounded-full cursor-pointer mdl:hidden text-designColor"
+          className="inline-flex items-center justify-center w-10 h-10 text-xl rounded-full cursor-pointer bg-slate-900 mdl:hidden text-cyan-400"
         >
           <FiMenu />
         </span>
@@ -50,18 +50,17 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="relative flex flex-col gap-8 py-2">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
-                <p className="mt-2 text-sm text-gray-400">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                <img className="w-16" src={logo} alt="logo" />
+                <p className="mt-2 text-sm text-justify text-gray-400">
+                  To attain something you've never achieved, you must undertake
+                  actions you've never pursued.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
                   <li
                     key={item._id}
-                    className="text-base font-normal tracking-wide text-gray-400 duration-300 cursor-pointer hover:text-designColor"
+                    className="text-base font-normal tracking-wide text-gray-400 duration-300 cursor-pointer hover:text-cyan-500"
                   >
                     <Link
                       onClick={() => setShowMenu(false)}
@@ -78,7 +77,7 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-col gap-4">
+              {/* <div className="flex flex-col gap-4">
                 <h2 className="mb-4 text-base uppercase font-titleFont">
                   Find me in
                 </h2>
@@ -93,7 +92,7 @@ const Navbar = () => {
                     <FaLinkedinIn />
                   </span>
                 </div>
-              </div>
+              </div> */}
               <span
                 onClick={() => setShowMenu(false)}
                 className="absolute text-2xl text-gray-400 duration-300 cursor-pointer top-4 right-4 hover:text-designColor"
