@@ -1,10 +1,9 @@
-import React,{useState} from 'react'
-import Title from '../layouts/Title';
-import ContactLeft from './ContactLeft';
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import ContactLeft from "./ContactLeft";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -23,8 +22,6 @@ const Contact = () => {
     e.preventDefault();
     if (username === "") {
       setErrMsg("Username is required!");
-    } else if (phoneNumber === "") {
-      setErrMsg("Phone number is required!");
     } else if (email === "") {
       setErrMsg("Please give your Email!");
     } else if (!emailValidation(email)) {
@@ -39,7 +36,6 @@ const Contact = () => {
       );
       setErrMsg("");
       setUsername("");
-      setPhoneNumber("");
       setEmail("");
       setSubject("");
       setMessage("");
@@ -48,16 +44,16 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full py-20 border-b-[1px] border-b-black p-1 shadow-cyan-500 "
     >
-      <div className="flex justify-center items-center text-center">
-        <Title title="CONTACT" des="Contact With Me" />
+      <div className="flex items-center justify-center text-center">
+        <Title des="Contact" />
       </div>
       <div className="w-full">
-        <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
+        <div className="flex flex-col justify-between w-full h-auto lgl:flex-row">
           <ContactLeft />
-          <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
-            <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
+          <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowTwo">
+            <form className="flex flex-col w-full gap-4 py-2 lgl:gap-6 lgl:py-5">
               {errMsg && (
                 <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
                   {errMsg}
@@ -68,87 +64,75 @@ const Contact = () => {
                   {successMsg}
                 </p>
               )}
-              <div className="w-full flex flex-col lgl:flex-row gap-10">
-                <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
+              <div className="flex flex-col w-full gap-10 lgl:flex-row">
+                <div className="flex flex-col w-full gap-4 lgl:w-1/2">
+                  <p className="text-sm tracking-wide text-gray-400 uppercase">
                     Your name
                   </p>
                   <input
                     onChange={(e) => setUsername(e.target.value)}
                     value={username}
-                    className={`${
-                      errMsg === "Username is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
+                    className={`contactInput ${
+                      errMsg === "Username is required!"
+                        ? "outline-cyan-500"
+                        : ""
+                    } hover:border-b-2 hover:border-cyan-500`}
                     type="text"
                   />
                 </div>
-                <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
-                    Phone Number
+                <div className="flex flex-col w-full gap-4 lgl:w-1/2">
+                  <p className="text-sm tracking-wide text-gray-400 uppercase">
+                    Email
                   </p>
                   <input
-                    onChange={(e) => setPhoneNumber(e.target.value)}
-                    value={phoneNumber}
-                    className={`${
-                      errMsg === "Phone number is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
-                    type="text"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                    className={` ${
+                      errMsg === "Please give your Email!"
+                        ? "border-cyan-500"
+                        : ""
+                    } contactInput hover:border-b-2 hover:border-cyan-500`}
+                    type="email"
                   />
                 </div>
               </div>
+
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Email
-                </p>
-                <input
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                  className={`${
-                    errMsg === "Please give your Email!" &&
-                    "outline-designColor"
-                  } contactInput`}
-                  type="email"
-                />
-              </div>
-              <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
+                <p className="text-sm tracking-wide text-gray-400 uppercase">
                   Subject
                 </p>
                 <input
                   onChange={(e) => setSubject(e.target.value)}
                   value={subject}
                   className={`${
-                    errMsg === "Plese give your Subject!" &&
-                    "outline-designColor"
-                  } contactInput`}
+                    errMsg === "Plese give your Subject!" && "outline-cyan-500"
+                  } contactInput  hover:border-b-2 hover:border-cyan-500`}
                   type="text"
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
+                <p className="text-sm tracking-wide text-gray-400 uppercase">
                   Message
                 </p>
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
                   className={`${
-                    errMsg === "Message is required!" && "outline-designColor"
-                  } contactTextArea`}
+                    errMsg === "Message is required!" && "outline-cyan-500"
+                  } contactTextArea  hover:border-b-2 hover:border-cyan-500`}
                   cols="30"
-                  rows="8"
+                  rows="6"
                 ></textarea>
               </div>
               <div className="w-full">
                 <button
                   onClick={handleSend}
-                  className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
+                  className="w-full h-12 text-base text-gray-400 uppercase duration-300 border rounded-lg border-cyan-500 hover:bg-cyan-500 hover:text-white hover:border-1 hover:border-blue-500"
                 >
                   Send Message
                 </button>
               </div>
-              {errMsg && (
+              {/* {errMsg && (
                 <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
                   {errMsg}
                 </p>
@@ -157,13 +141,13 @@ const Contact = () => {
                 <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-green-500 text-base tracking-wide animate-bounce">
                   {successMsg}
                 </p>
-              )}
+              )} */}
             </form>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;
