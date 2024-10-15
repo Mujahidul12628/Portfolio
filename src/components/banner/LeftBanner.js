@@ -178,7 +178,7 @@ const LeftBanner = () => {
       </div> */}
       <div className="flex justify-center md:justify-start">
         <a
-          href="https://drive.google.com/file/d/1yTYc-fUtuV_PvO-khaH-hDBwRcYRY6ZK/view?usp=sharing"
+          href="https://drive.google.com/file/d/1yvihc-CwblOiCdgTh4bG-ugpJObls9Ca/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           download="Resume of Mujahidul Islam.pdf"
