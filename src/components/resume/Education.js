@@ -21,7 +21,7 @@ const Education = () => {
             h="Bachelor of Science"
             Institute="Daffodil International University  "
             department="Computer Science and Engineering"
-            res="CGPA- 4.00 (Out of 4.00)"
+            res="CGPA- 3.82 (Out of 4.00)"
             area=" (Dhaka, Bangladesh)"
             year="2019 - 2023"
           />
