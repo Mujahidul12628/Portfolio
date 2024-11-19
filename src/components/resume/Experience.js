@@ -11,7 +11,7 @@ const Experience = () => {
     >
       <div>
         <div className="">
-          <h2 className="text-4xl font-bold">Job Experience</h2>
+          <h2 className="text-2xl font-bold md:text-3xl">Job Experience</h2>
         </div>
         <div className="flex flex-col w-full mt-5">
           <ResumeCard
@@ -24,14 +24,16 @@ const Experience = () => {
             li3="☑ Utilized Material-UI for styling, ensuring consistent and visually appealing interfaces"
             li4="☑ Designed and administered PostgreSQL databases using PGAdmin4 for optimal performance"
             contribution="Contribution :"
-            p1="❖ Project RDCD : Led the development of a comprehensive system to manage the activities of the Rural Development Cooperative Division, streamlining operations and improving efficiency."
+            p1="❖ Project RDCD : Contributed to the development of a comprehensive system to manage the activities of the Rural Development Cooperative Division, streamlining operations and improving efficiency."
             p2="❖ Project BONDHON: Marriage registration platform aimed at modernizing the government-authorized registration process, introducing technological solutions to enhance accessibility and transparency."
           />
         </div>
       </div>
       <div>
         <div className="">
-          <h2 className="text-4xl font-bold">Training Experience</h2>
+          <h2 className="font-semibold text-2xl md:text-3xl">
+            Training Experience
+          </h2>
         </div>
         <div className="flex flex-col w-full gap-5 mt-5 ">
           <ResumeCard

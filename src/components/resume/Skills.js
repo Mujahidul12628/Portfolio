@@ -104,7 +104,9 @@ const Skills = () => {
     <div id="skills" className="mx-auto max-w-7xl">
       <div className="flex items-center justify-center mb-5 md:mb-8">
         <div className="flex flex-col gap-4 py-6 lgl:py-12 font-titleFont">
-          <h2 className="text-3xl font-bold md:text-4xl">Professional Skill</h2>
+          <h2 className="text-2xl font-semibold md:text-3xl">
+            Professional Skill
+          </h2>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">

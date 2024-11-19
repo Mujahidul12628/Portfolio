@@ -51,10 +51,8 @@ const LeftBanner = () => {
         </div>
         <p className="text-sm leading-6 tracking-wide text-justify sm:text-base font-bodyFont">
           Diligent and detail-oriented Computer Science and Engineering graduate
-          with a strong commitment for development and learning. Seeking a
-          challenging position as a Web Developer at any reputable company to
-          contribute to the growth of the organization as well as to expand my
-          expertise.
+          with a strong foundation in JavaScript and its frameworks, skilled at
+          creating user-friendly, high-performing applications.
         </p>
       </div>
 

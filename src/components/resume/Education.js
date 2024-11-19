@@ -12,7 +12,7 @@ const Education = () => {
       {/* part one */}
       <div className="w-full ">
         <div className="flex flex-col gap-4 py-5 lgl:py-12 font-titleFont">
-          <h2 className="text-3xl font-bold text-center md:text-4xl">
+          <h2 className="text-2xl font-semibold text-center md:text-3xl">
             Education
           </h2>
         </div>
